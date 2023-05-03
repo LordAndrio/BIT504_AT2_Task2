@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class GameMain extends JPanel implements MouseListener{
 	//Constants for game 
-	// number of ROWS by COLS cell constants 
+	//number of ROWS by COLS cell constants 
 	public static final int ROWS = 3;     
 	public static final int COLS = 3;  
 	public static final String TITLE = "Tic Tac Toe";
@@ -26,20 +26,20 @@ public class GameMain extends JPanel implements MouseListener{
 	// the game board 
 	private Board board;
 	 	 
-	//TODO: create the enumeration for the variable below (GameState currentState)
+	//TODO:create the enumeration for the variable below (GameState currentState)
 	//HINT all of the states you require are shown in the code within GameMain
 	private GameState currentState; 
 	
-	// the current player
+	//the current player
 	private Player currentPlayer; 
-	// for displaying game status message
+	//for displaying game status message
 	private JLabel statusBar;       
 	
 
 	/** Constructor to setup the UI and game components on the panel */
 	public GameMain() {   
 		
-		// TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.          
+		//TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.          
 	    
 	    
 		// Setup the status bar (JLabel) to display status message       
@@ -55,11 +55,8 @@ public class GameMain extends JPanel implements MouseListener{
 		// account for statusBar height in overall height
 		setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT + 30));
 		
-		
-		// TODO: Create a new instance of the game "Board"class. HINT check the variables above for the correct name
-
-		
-		//TODO: call the method to initialise the game board
+		//Check to make sure board has a new instance AND the method initialises the game board.
+		board = new Board();
 
 	}
 	
@@ -140,13 +137,13 @@ public class GameMain extends JPanel implements MouseListener{
 			//check for win after play
 			if(board.hasWon(thePlayer, row, col)) {
 				
-				// TODO: check which player has won and update the currentstate to the appropriate gamestate for the winner
+				//TODO: check which player has won and update the currentstate to the appropriate gamestate for the winner
 
 				
 			} else 
 				if (board.isDraw ()) {
 					
-				// TODO: set the currentstate to the draw gamestate
+				//TODO: set the currentstate to the draw gamestate
 
 			}
 			//otherwise no change to current state of playing
