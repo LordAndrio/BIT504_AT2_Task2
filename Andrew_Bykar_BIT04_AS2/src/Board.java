@@ -15,7 +15,6 @@ public class Board {
 	/** Constructor to create the game board */
 	public Board() {
 		
-	 //TODO: initialise the cells array using ROWS and COLS constants
 		cells = new Cell[ROWS][COLS];
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
@@ -23,7 +22,7 @@ public class Board {
 				cells[row][col] = new Cell(row, col);
 			}
 		}
-	}
+	}  
 	
 
 	 /** Return true if it is a draw (i.e., no more EMPTY cells) */ 
@@ -56,7 +55,8 @@ public class Board {
 		 
 		
 		//TODO: Check the diagonal in the other direction
-		
+		/*if( cells[0][2].content == thePlayer && cells[1][1].content == thePlayer && cells[2][0].content == thePlayer)
+			return true;*/
 
 		
 		//no winner, keep playing
