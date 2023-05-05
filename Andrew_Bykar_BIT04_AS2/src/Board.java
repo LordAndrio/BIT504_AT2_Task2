@@ -53,10 +53,8 @@ public class Board {
 		if( cells[0][0].content == thePlayer && cells[1][1].content == thePlayer && cells[2][2].content == thePlayer)
 			return true;
 		 
-		
-		//TODO: Check the diagonal in the other direction
-		/*if( cells[0][2].content == thePlayer && cells[1][1].content == thePlayer && cells[2][0].content == thePlayer)
-			return true;*/
+		if( cells[0][2].content == thePlayer && cells[1][1].content == thePlayer && cells[2][0].content == thePlayer)
+			return true;
 
 		
 		//no winner, keep playing
