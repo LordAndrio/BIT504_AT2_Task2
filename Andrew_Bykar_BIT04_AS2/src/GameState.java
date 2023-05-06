@@ -1,10 +1,8 @@
-/**
- * Enumeration for the game state
- */
+/**Enumeration for the game state */
 
 public enum GameState {
-	Playing,
-	Draw,
-	Cross_won,
-	Nought_won
+	Playing, //Game is currently being played
+	Draw, //Game has ended in a draw
+	Cross_won, //Game has ended in a victory for crosses
+	Nought_won //Game has ended in a victory for noughts
 }

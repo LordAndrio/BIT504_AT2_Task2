@@ -1,9 +1,7 @@
-/**
- * Enumeration for the players move
- */
+/**Enumeration for the players move */
 
 public enum Player {
-	Empty,
-	Cross,
-	Nought
+	Empty, //Cell is empty
+	Cross, //Cell is a cross
+	Nought //Cell is a nought
 }
